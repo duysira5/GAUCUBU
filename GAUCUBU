@@ -1,0 +1,82 @@
+function TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+--// Key System GUI
+local Players = game:GetService(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({8400,11340,10185,12705,10605,11970,12075}))
+local player = Players.LocalPlayer
+local CoreGui = game:GetService(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({7035,11655,11970,10605,7455,12285,11025}))
+
+-- Xóa GUI cũ nếu có
+if CoreGui:FindFirstChild(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({7875,10605,12705,8715,12705,12075,12180,10605,11445,7455,8925,7665})) then
+    CoreGui.KeySystemGUI:Destroy()
+end
+
+local ScreenGui = Instance.new(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({8715,10395,11970,10605,10605,11550,7455,12285,11025}))
+ScreenGui.Name = TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({7875,10605,12705,8715,12705,12075,12180,10605,11445,7455,8925,7665})
+ScreenGui.Parent = CoreGui
+
+local Frame = Instance.new(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({7350,11970,10185,11445,10605}))
+Frame.Size = UDim2.new(0, 300, 0, 150)
+Frame.Position = UDim2.new(0.5, -150, 0.5, -75)
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.BorderSizePixel = 0
+Frame.Parent = ScreenGui
+
+local Title = Instance.new(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+Title.Size = UDim2.new(1, 0, 0, 40)
+Title.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Title.Text = TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({25200,16695,15540,15225,3360,7875,10605,12705,3360,8715,12705,12075,12180,10605,11445})
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 18
+Title.Parent = Frame
+
+local TextBox = Instance.new(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({8820,10605,12600,12180,6930,11655,12600}))
+TextBox.Size = UDim2.new(0.8, 0, 0, 35)
+TextBox.Position = UDim2.new(0.1, 0, 0.35, 0)
+TextBox.PlaceholderText = TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({8190,10920,23625,19530,18165,11760,3360,7875,10605,12705,3360,12180,23625,19530,16905,11025,3360,20580,15225,20475,17010,12705,4830,4830,4830})
+TextBox.Text = TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({})
+TextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Font = Enum.Font.Gotham
+TextBox.TextSize = 16
+TextBox.Parent = Frame
+
+local GetKeyBtn = Instance.new(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+GetKeyBtn.Size = UDim2.new(0.45, -5, 0, 30)
+GetKeyBtn.Position = UDim2.new(0.05, 0, 0.75, 0)
+GetKeyBtn.BackgroundColor3 = Color3.fromRGB(70, 130, 180)
+GetKeyBtn.Text = TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({25200,16695,14700,15120,3360,7455,10605,12180,3360,7875,10605,12705})
+GetKeyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetKeyBtn.Font = Enum.Font.GothamBold
+GetKeyBtn.TextSize = 14
+GetKeyBtn.Parent = Frame
+
+local CheckKeyBtn = Instance.new(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}))
+CheckKeyBtn.Size = UDim2.new(0.45, -5, 0, 30)
+CheckKeyBtn.Position = UDim2.new(0.5, 5, 0.75, 0)
+CheckKeyBtn.BackgroundColor3 = Color3.fromRGB(34, 139, 34)
+CheckKeyBtn.Text = TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({23730,16380,13965,3360,8190,10920,23625,19530,18165,11760,3360,7875,10605,12705})
+CheckKeyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+CheckKeyBtn.Font = Enum.Font.GothamBold
+CheckKeyBtn.TextSize = 14
+CheckKeyBtn.Parent = Frame
+
+-- Chức năng Get Key
+GetKeyBtn.MouseButton1Click:Connect(function()
+	setclipboard(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({10920,12180,12180,11760,12075,6090,4935,4935,10395,11655,11550,12180,11970,11655,11340,10395,4830,10395,11655,11445,4935,5880,5040,5985,5250,10605,5670,5565,5145}))
+end)
+
+-- Chức năng Check Key
+CheckKeyBtn.MouseButton1Click:Connect(function()
+	if TextBox.Text == TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({7455,6825,8925,7035,8925,8820,8295}) then
+		Frame:Destroy() -- Xóa bảng key
+		ScreenGui:Destroy()
+		-- Load script của bạn
+		loadstring(game:HttpGet(TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,10500,12285,12705,12075,11025,11970,10185,5565,4935,12180,10605,12075,12180,10920,12285,10290,12075,11655,12285,11970,10395,10605,10290,11655,10815,10185,11445,10605,12390,11550,11760,4935,11970,10605,10710,12075,4935,10920,10605,10185,10500,12075,4935,11445,10185,11025,11550,4935,8715,8295,8610,8610,9345,9030,8190,8400})))()
+	else
+		TextBox.Text = TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({})
+		TextBox.PlaceholderText = TcOqmPdXHWkbvtVWOLRSZGFFfBdTZciawTsMJAllAaroOSpHFlKWsmod({23730,16485,14700,3360,7875,10605,12705,3360,12075,10185,11025,3360,11970,23625,19635,15435,11025,3465})
+	end
+end)
+    
